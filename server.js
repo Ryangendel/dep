@@ -14,6 +14,10 @@ if (process.env.NODE_ENV === "production"){
     })
 }
 
+app.get("/bulldog",(req, res)=>{
+    res.send({hi:"FROM SERVER"})
+})
+
 app.listen(PORT,()=>{
     console.log("listening on port 3001")
 })
